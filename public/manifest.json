@@ -1,0 +1,36 @@
+{
+    "name": "Budget Tracker",
+    "short_name": "Budget Tracker",
+    "description": "An app that allows a user to enter expenses and deposits to track a budget",
+    "start_url": "../index.html",
+    "background_color": "#dddddd",
+    "theme_color": "#317EFB",
+    "display": "standalone",
+    "icons": [
+		{
+			"src": "./icons/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/icon-128x128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/icon-96x96.png",
+			"sizes": "96x96",
+			"type": "image/png"
+		}
+	]
+}
