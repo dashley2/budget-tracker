@@ -18,7 +18,7 @@ request.onsuccess = function(event) {
 
     // check if app is online, if yes run uploadBudget() function to send all local db data to api
     if (navigator.online) {
-      uploadBudget();
+      uploadTransaction();
     }
   };
 
@@ -32,10 +32,10 @@ function saveRecord(record) {
     const transaction = db.transaction(['new_transaction'], 'readwrite');
 
     // access the object store for `new_transaction`
-    const budgetObjectStore = transaction.objectStore('new_transaction');
+    const transactionObjectStore = transaction.objectStore('new_transaction');
 
     // add record to your store with add method
-    budgetObjectStore.add(record);
+    transactionObjectStore.add(record);
   }
 
 function uploadTransaction() {
